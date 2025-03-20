@@ -12,6 +12,7 @@ public class UserFace {
     private String id;
 	private String userId;
 	private List<byte[]> faceImages;
+	private List<Double> faceEmbeddings;
 
 	public UserFace(String userId, List<byte[]> faceImages) {
         this.userId = userId;
@@ -24,6 +25,14 @@ public class UserFace {
 
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public List<Double> getFaceEmbeddings() {
+		return faceEmbeddings;
+	}
+
+	public void setFaceEmbeddings(List<Double> faceEmbeddings) {
+		this.faceEmbeddings = faceEmbeddings;
 	}
 
 	public String getUserId() {
